@@ -2,6 +2,6 @@ import React, { Component } from 'react'
 
 export default class Invoices extends Component {
     render() {
-        return 'aoeuaotnse'
+        return 'este es el componente Invoices'
     }
 }
