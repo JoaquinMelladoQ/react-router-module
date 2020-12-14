@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Route } from 'react-router-dom'
+import Loadable from 'react-loadable'
 import Prueba from './Components/Prueba'
 import Invoices from './Components/Invoices'
 import './App.css'

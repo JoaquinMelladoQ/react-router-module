@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 export default class Invoices extends Component {
     render() {
         return(
-            <div>Este es el componente Invoices! <Link to="/" >Volver</Link></div>
+            <div>Este es el componente Invoices! <Link to="/">Volver</Link></div>
         )
     }
 }
