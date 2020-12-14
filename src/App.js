@@ -1,10 +1,16 @@
 import React, { Component } from 'react'
 import { Route } from 'react-router-dom'
 import Loadable from 'react-loadable'
-import Prueba from './Components/Prueba'
-import Invoices from './Components/Invoices'
 import './App.css'
 
+
+const Loader = x => Loadable({
+  loading: () => 'Cargando...',
+  loader: x 
+})
+
+const Prueba = Loader(() => import('./Components/Prueba'))
+const Invoices = Loader(() => import('./Components/Invoices'))
 class App extends Component {
   render() {
     return (
