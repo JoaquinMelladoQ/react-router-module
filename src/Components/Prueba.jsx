@@ -3,9 +3,10 @@ import React, { Component } from 'react'
 export default class Prueba extends Component {
 
     handleClick = () => {
-        console.log(this.props)
+        const { history } = this.props
+        history.push('/invoices')
     }
     render() {
-        return <div onClick={this.handleClick}>'este es el componente prueba!'</div>
+        return <div onClick={this.handleClick}>Este es el componente prueba!</div>
     }
 } 
